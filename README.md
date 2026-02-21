@@ -29,10 +29,10 @@ The design of Flavourly was created with the following goals:
 Follow these steps to run the project locally:
 
 1. **Clone the repository**
-   git clone https://github.com/Shenixreal/Flavourly.git
+   git clone https://github.com/Shenixreal/Flavourly-Recipes.git
 
 2. Navigate to the project folder
-   cd Flavourly/project
+   cd Flavourly-Recipes/project
 
 3. Install dependencies
    npm install or yarn install
