@@ -4,6 +4,7 @@ import { Search, Shuffle } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
+import heroBg from '../assets/hero-bg.jpg';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -36,7 +37,8 @@ export default function Home() {
   return (
     <div
       className="min-h-[calc(100vh-theme(spacing.16)-theme(spacing.20))] bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/src/assets/hero-bg.jpg')" }}>
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10">
@@ -51,7 +53,7 @@ export default function Home() {
             </p>
 
             {isLoading ? (
-              <LoadingSpinner/>
+              <LoadingSpinner />
             ) : (
               <>
                 <form onSubmit={handleSearch} className="mb-6">
